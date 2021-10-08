@@ -1,0 +1,100 @@
+:root {
+  --main-color1: #5B3535;
+  --main-color2: #C98585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 
+  타이틀 영역 사진: 64%
+  텍스트 영역: 36%
+*/
+#title {
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+}
+
+#title figure {
+  width: 100%;
+  height: 64vh;
+  /* outline: 1px solid red; */
+  background: #ccc;
+  background-image: url(../images/wedding.jpeg);
+  background-size: cover;
+  position: relative;
+}
+
+#title figure figcaption {
+  /* outline: 1px solid red; */
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#title figure figcaption .date {
+  background: var(--main-color1);
+  color: #fff;
+  width: 54px;
+  height: 54px;
+  display: block;
+  border-radius: 50%;
+  font-size: 15px;
+  text-align: center;
+  line-height: 54px;
+  margin: 0 auto;
+}
+
+#title figure figcaption span:last-child {
+  font-size: 12px;
+  color: var(--main-color1);
+}
+
+#title .title-info {
+  padding: 15px;
+}
+
+#title .title-info .name {
+  text-align: right;
+  color: var(--main-color1);
+  font-weight: 500;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+#title .title-info .name:after {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 3px;
+  background: var(--main-color1);
+  position: absolute;
+  right: -15px;
+  bottom: -2px;
+}
+
+#title .title-info .address {
+  text-align: center;
+  margin-top: 80px;
+  font-weight: bold;
+  line-height: 24px;
+  color: var(--main-color1);
+}
