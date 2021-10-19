@@ -134,6 +134,13 @@ body {
   color: var(--main-color2);
 }
 
+#intro .guest-box:last-of-type {
+  border-bottom: 2px solid var(--main-color2);
+  padding-bottom: 26px;
+  margin-left: 43px;
+  margin-right: 43px;
+}
+
 #intro .guest-box .guest p {
   font-size: 14px;
   font-weight: normal;
